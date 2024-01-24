@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <InternalCommands />
+    <Macros>
+        <Macro name="1 Numbers remain" Ctrl="yes" Alt="yes" Shift="no" Key="48">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="[^\d\r\n]+" />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+        <Macro name="2 Remove spaces" Ctrl="yes" Alt="yes" Shift="no" Key="49">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="^\s*" />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+        <Macro name="3 Add quotes" Ctrl="yes" Alt="yes" Shift="no" Key="50">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="(.+)" />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam='&quot;\1&quot;' />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+        <Macro name="4 Pretty" Ctrl="yes" Alt="yes" Shift="no" Key="51">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam="\r\n" />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=", " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+        <Macro name="5 Add 20000" Ctrl="yes" Alt="yes" Shift="no" Key="52">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam=", " />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=":20000, " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+        <Macro name="6 Add 5000" Ctrl="no" Alt="no" Shift="no" Key="0">
+            <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
+            <Action type="3" message="1601" wParam="0" lParam="0" sParam=", " />
+            <Action type="3" message="1625" wParam="0" lParam="2" sParam="" />
+            <Action type="3" message="1602" wParam="0" lParam="0" sParam=":5000, " />
+            <Action type="3" message="1702" wParam="0" lParam="768" sParam="" />
+            <Action type="3" message="1701" wParam="0" lParam="1609" sParam="" />
+        </Macro>
+    </Macros>
+    <UserDefinedCommands>
+        <Command name="Get PHP help" Ctrl="no" Alt="yes" Shift="no" Key="112">https://www.php.net/$(CURRENT_WORD)</Command>
+        <Command name="Wikipedia Search" Ctrl="no" Alt="yes" Shift="no" Key="114">https://en.wikipedia.org/wiki/Special:Search?search=$(CURRENT_WORD)</Command>
+        <Command name="Open selected file path in new instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_FULL_FILE_PATH) $(CURRENT_WORD) -nosession -multiInst</Command>
+    </UserDefinedCommands>
+    <PluginCommands />
+    <ScintillaKeys />
+</NotepadPlus>
