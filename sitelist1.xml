@@ -1,0 +1,13 @@
+<site-list version="1">
+    <created-by>YourName</created-by>
+    <created-date>2024-06-03</created-date>
+    <site url="https://example1.com">
+        <compat-mode>InternetExplorer11</compat-mode>
+    </site>
+    <site url="https://example2.com">
+        <compat-mode>InternetExplorer11</compat-mode>
+    </site>
+    <site url="https://example3.com">
+        <compat-mode>InternetExplorer11</compat-mode>
+    </site>
+</site-list>
