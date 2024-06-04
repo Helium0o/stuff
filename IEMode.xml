@@ -1,14 +1,14 @@
-- <site-list version="5">
-- <created-by>
+<site-list version="5">
+<created-by>
   <tool>EMIESiteListManager</tool> 
   <version>12.0.0.0</version> 
   <date-created>02/10/2022 17:22:11</date-created> 
   </created-by>
-- <site url="ahhpms.atriumhotelheathrow.com">
+  <site url="ahhpms.atriumhotelheathrow.com">
   <compat-mode>Default</compat-mode> 
   <open-in allow-redirect="true">IE11</open-in> 
   </site>
-- <site url="ahhrep.atriumhotelheathrow.com">
+<site url="ahhrep.atriumhotelheathrow.com">
   <compat-mode>Default</compat-mode> 
   <open-in allow-redirect="true">IE11</open-in> 
   </site>
